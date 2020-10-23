@@ -487,3 +487,4 @@ let @b = "y$$a pj0j"
 " At last, insert translations into its language php file
 let @r = "\"iyi[Wy$/i$hdi'hpj0j0"
 
+Plug 'wakatime/vim-wakatime'
