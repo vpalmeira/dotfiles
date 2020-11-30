@@ -419,7 +419,7 @@ let g:ale_completion_enabled = 1
 " Set omni-completion function
 set omnifunc=ale#completion#OmniFunc
 
-" Config fixers
+" Config fixers and linters
 let g:ale_fixers = {
 \   '*': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint'],
@@ -487,4 +487,3 @@ let @b = "y$$a pj0j"
 " At last, insert translations into its language php file
 let @r = "\"iyi[Wy$/i$hdi'hpj0j0"
 
-Plug 'wakatime/vim-wakatime'
