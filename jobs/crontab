@@ -1,0 +1,16 @@
+# Edit this file to introduce tasks to be run by cron.
+#
+# Copy the content of this file to your user's crontab
+# crontab -e
+
+# configure keyboard keys
+@reboot sh $HOME/scripts/config-keys.sh
+
+# set wallpaper by time of the day and day of the week
+*/15 6-9 * * 1-5 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/mt-fuji.jpg'
+*/15 10-13 * * 1-5 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/rice-terraces.jpg'
+*/15 14-17 * * 1-5 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/second-floor.jpg'
+*/15 18-21 * * 1-5 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/lofi-coffee-2.jpg'
+*/15 22-5 * * 1-5 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/asian-style.jpg'
+*/15 6-17 * * 0,6 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/forrest-lake.png'
+*/15 18-5 * * 0,6 sh $HOME/scripts/change-wallpaper.sh '/home/antoniopalmeira/Pictures/Wallpapers/lofi-coffee.png'
