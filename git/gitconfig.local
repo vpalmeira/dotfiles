@@ -1,0 +1,5 @@
+[user]
+  name = <your-name>
+  email = <your-email>
+
+# Copy this file to $HOME and alter it accordingly so it is loaded into .gitconfig
