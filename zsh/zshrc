@@ -125,4 +125,5 @@ if [ -f ~/.zshenv ]; then
     source $HOME/.zshenv
 fi
 
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+# Swap CapsLock and Escape keys
+setxkbmap -option caps:swapescape
