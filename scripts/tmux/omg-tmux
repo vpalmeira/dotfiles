@@ -1,6 +1,6 @@
 #!/bin/sh
 tmux new-session -s omg -n run \; \
-  split-window -v -p 40 -t omg \; \
+  split-window -v -p 50 -t omg \; \
   split-window -h -p 33 -t omg \; \
   select-pane -t 2 \; \
   split-window -h -p 50 -t omg \; \
