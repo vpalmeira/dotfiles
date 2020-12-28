@@ -1,6 +1,6 @@
 #!/bin/sh
 
-xmodmap $HOME/.Xmodmap
+xmodmap ~/.Xmodmap
 
 # To make it run on startup set crontab:
 # crontab -e

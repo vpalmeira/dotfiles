@@ -1,0 +1,12 @@
+#!/bin/sh
+tmux new-session -s omg -n run \; \
+  split-window -v -p 40 -t omg \; \
+  split-window -h -p 33 -t omg \; \
+  select-pane -t 2 \; \
+  split-window -h -p 50 -t omg \; \
+  select-pane -t 1 \; \
+  split-window -h -p 50 -t omg \; \
+  new-window -n aux \; \
+  split-window -v -p 50 -t omg:2 \; \
+  select-window -t omg:1 \; \
+  select-pane -t 1 \;
