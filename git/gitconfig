@@ -31,3 +31,5 @@
 [include]
   path = ~/.gitconfig.local
 
+[commit]
+	template = /home/antoniopalmeira/.git-commit-template.txt
