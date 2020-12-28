@@ -24,7 +24,8 @@ alias dev='cd ~/local-dev'
 alias dot='cd ~/dotfiles'
 
 # Projects
-alias clique='cd ~/local-dev/izepay/clique'
+alias omg='cd ~/local-dev/omega'
+alias omc='cd ~/local-dev/omega/monorepo'
 
 # Edit config files
 alias cfv='vim ~/.vimrc'
@@ -35,6 +36,14 @@ alias cfg='vim ~/.gitconfig'
 alias cfm='vim ~/.Xmodmap'
 alias cfx='vim ~/.xsessionrc'
 alias cfh='sudo vim /etc/hosts'
+
+# Git commands
+alias g='git'
+alias gst='git status'
+alias ga='git add .'
+alias gac='git add . && git commit -m'
+alias gco='git checkout'
+alias gcob='git checkout --branch'
 
 # Tmux commands
 alias tms='tmux new -s'
