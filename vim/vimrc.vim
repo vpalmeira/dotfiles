@@ -466,8 +466,11 @@ let g:UltiSnipsExpandTrigger="<C-l>"
 ""            Airline         "
 
 " Set airline theme
-let g:airline_theme='badwolf'
-
+let g:airline_theme='powerlineish'
+" Use powerline fonts
+let g:airline_powerline_fonts = 1
+" Enable tabline extension
+let g:airline#extensions#tabline#enabled = 1
 
 """""""""""""""""""""""""""""""
 ""           Macros           "
