@@ -3,18 +3,19 @@
   st = status
   br = branch
   brs = branch -a
-  brd = branch -d
+  brd = branch -D
   cob = checkout -b
   last = log -1 HEAD
   visual = !gitk
   a = add -A
   ci = commit
   cm = commit -m
+  cp = cherry-pick
   ac = !git add -A && git commit -m
   px = push -u origin HEAD
   pl = pull
   curr = rev-parse --abbrev-ref HEAD
-  hist = log --color --graph --pretty=format:'%C(magenta)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev- commit
+  hist = log --color --graph --pretty=format:'%C(magenta)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   conflist = config --global --list
   authorlog = "!f() { git log --author=\"$1\"; }; f"
 
@@ -23,7 +24,7 @@
   editor = vim
 
 [credential]
-  helper = cache --timeout 7200
+  helper = store
 
 [color]
   ui = true
@@ -33,6 +34,14 @@
 
 [commit]
 	template = /home/antoniopalmeira/.git-commit-template.txt
+
 [user]
 	email = av.palmeira@gmail.com
 	name = Antonio Palmeira
+
+[push]
+	default = current
+
+[pull]
+	rebase = true
+
