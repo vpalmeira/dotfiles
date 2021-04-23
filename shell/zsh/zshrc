@@ -125,4 +125,8 @@ if [ -f ~/.zshenv ]; then
     source $HOME/.zshenv
 fi
 
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+# load vars
+[ -f ~/.shell.vars ] && source ~/.shell.vars
+
+# load keyboard configs
+[ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
