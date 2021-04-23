@@ -32,9 +32,6 @@
 [include]
   path = ~/.gitconfig.local
 
-[commit]
-	template = /home/antoniopalmeira/.git-commit-template.txt
-
 [user]
 	email = av.palmeira@gmail.com
 	name = Antonio Palmeira
